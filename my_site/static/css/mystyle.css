@@ -1,0 +1,8 @@
+/* navbar icons */
+span > a > i {
+    font-size: 1.5em;
+}
+
+nav.navbar{
+    background-color: #314a57;
+}

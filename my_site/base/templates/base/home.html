@@ -1,18 +1,77 @@
 {% extends "base/base.html" %}
 {%block title%}Home{%endblock title%}
+{% load static %}
 
 {%block content%}
 <nav class="navbar">
-     <div class="contact">
-      <div class="col">
-        <span><a href="https://www.linkedin.com/in/travis-cottrell-131636212/"><i class="bi bi-linkedin"></i></a></span>
-        <span><a href="https://github.com/TravisCottrell"><i class="bi bi-github"></i></a></span>
-      </div>
-    </div><!-- end contact info -->
+  <div class="contact">
+    <div class="col">
+      <span><a href="https://www.linkedin.com/in/travis-cottrell-131636212/"><i class="bi bi-linkedin"></i></a></span>
+      <span><a href="https://github.com/TravisCottrell"><i class="bi bi-github"></i></a></span>
+    </div>
+  </div><!-- end contact info -->
 </nav>
-<div class="container">
+
+<div class="nameplate">
+  <div class="nameplate-content">
+    <div class="nameplate-content-me">
+      <img id="pic" src="{% static 'images/pfp.png' %}">
+      <h1 class="name">Travis<br>Cottrell</h1>
+    </div>
+    <h3 class="description">FullStack Developer</h3>
+    </div>
+</div>
+
+<div class="container-fluid MyProjects ">
+<div class="container"
+  <h3>My Projects</h3>
   <div class="row">
-    
+
+    <div class="projects--wrapper">
+      <div class="col">
+        <img class="project--thumbnail" src="{% static 'images/screenshot1.png' %}">
+        <div class="project--body">
+            <h5>first project</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="projects--wrapper">
+      <div class="col">
+        <img class="project--thumbnail" src="{% static 'images/screenshot2.png' %}">
+        <div class="project--body">
+            <h5>second project</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="projects--wrapper">
+      <div class="col">
+        <img class="project--thumbnail" src="{% static 'images/screenshot3.png' %}">
+        <div class="project--body">
+            <h5>third project</h5>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+
+<div class="container-fluid aboutme">
+  <div class="container">
+    <h3>More About Me</h3>
+
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+        and
+        scrambled it to make a type specimen book.</p>
+    <p> It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+        essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+        containing
+        Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
+        including
+        versions of Lorem Ipsum.</p>
   </div>
 </div>
 

@@ -3,75 +3,101 @@
 {% load static %}
 
 {%block content%}
-<nav class="navbar">
+<nav class="navbar ">
   <div class="contact">
-    <div class="col">
-      <span><a href="https://www.linkedin.com/in/travis-cottrell-131636212/"><i class="bi bi-linkedin"></i></a></span>
-      <span><a href="https://github.com/TravisCottrell"><i class="bi bi-github"></i></a></span>
-    </div>
+      <span><a href="https://www.linkedin.com/in/travis-cottrell-131636212/" target="_blank"><i class="bi bi-linkedin"></i></a></span>
+      <span><a href="https://github.com/TravisCottrell" target="_blank"><i class="bi bi-github"></i></a></span>
   </div><!-- end contact info -->
 </nav>
 
 <div class="nameplate">
   <div class="nameplate-content">
     <div class="nameplate-content-me">
-      <img id="pic" src="{% static 'images/pfp.png' %}">
-      <h1 class="name">Travis<br>Cottrell</h1>
+      <img id="profilePic" src="{% static 'images/pfp2.png' %}">
+      <h1 class="name">Jesse<br>Anime</h1>
     </div>
-    <h3 class="description">FullStack Developer</h3>
-    </div>
+    <h3 class="title">FullStack Developer</h3>
+    <p class="resume"><a  href="{% static 'images/Travis_Cottrell.pdf' %}" target="_blank" >Resume</a></p>
+  </div>
 </div>
 
 <div class="container-fluid MyProjects ">
-<div class="container"
-  <h3>My Projects</h3>
-  <div class="row">
-
-    <div class="projects--wrapper">
-      <div class="col">
-        <img class="project--thumbnail" src="{% static 'images/screenshot1.png' %}">
-        <div class="project--body">
-            <h5>first project</h5>
+<h3>My Projects</h3>
+  <div class="test">
+    <div class="row">
+      <div class="projectsWrapper">
+        <div class="col">
+          <img class="projectPics" src="{% static 'images/screenshot4.png' %}">
+          <div class="projectBody">
+              <h5>Image Search Website</h5>
+              <p>Abilty to search in several different ways for images that are posted by a user.</p>
+              <div class="projectTagWrapper">
+              <span class="projectTag">XAMPP</span>
+                <span class="projectTag">PHP</span>
+                <span class="projectTag">JavaScript</span>
+                <span class="projectTag">MySQL</span>
+                <span class="projectTag">Bootstrap</span>
+              </div>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="projects--wrapper">
-      <div class="col">
-        <img class="project--thumbnail" src="{% static 'images/screenshot2.png' %}">
-        <div class="project--body">
-            <h5>second project</h5>
+      <div class="projectsWrapper">
+        <div class="col">
+          <img class="projectPics" src="{% static 'images/reloading.png' %}">
+          <div class="projectBody">
+              <h5>Reloading Data Tracker</h5>
+              <p>Editable dynamic HTML table that stores data. Uses REST api so there's no refresh required to update the tables.</p>
+              <div class="projectTagWrapper">
+                <span class="projectTag">Django</span>
+                <span class="projectTag">Python</span>
+                <span class="projectTag">JavaScript</span>
+                <span class="projectTag">REST</span>
+                <span class="projectTag">Bootstrap</span>
+              </div>
+          </div>
+          
         </div>
       </div>
-    </div>
 
-    <div class="projects--wrapper">
-      <div class="col">
-        <img class="project--thumbnail" src="{% static 'images/screenshot3.png' %}">
-        <div class="project--body">
-            <h5>third project</h5>
+      {% comment %} <div class="projects--wrapper">
+        <div class="col">
+          <img class="project--thumbnail" src="{% static 'images/screenshot3.png' %}">
+          <div class="project--body">
+              <h5>third project</h5>
+          </div>
         </div>
-      </div>
-    </div>
+      </div> {% endcomment %}
 
+    </div>
   </div>
 </div>
-</div>
 
-<div class="container-fluid aboutme">
-  <div class="container">
-    <h3>More About Me</h3>
+<div class="container-fluid ">
+  <div class="container ">
+    <div class="row d-flex justify-content-center">
+      <div class="col-4" >
+        <div class=" aboutme">
+          <h3>About Me</h3>
+          <p>
+             I love eveything technology related. I've had a passion for building and tinkering with PCs for about 6 years. 
+             I also love embedded systems like CNC machines and 3D printers.
+          </p>
 
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-        and
-        scrambled it to make a type specimen book.</p>
-    <p> It has survived not only five centuries, but also the leap into electronic typesetting, remaining
-        essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
-        containing
-        Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
-        including
-        versions of Lorem Ipsum.</p>
+          <p> My main hobby is the outdoors. I love exploring nature and learning new things. I spend a lot of my spare time hiking, camping, and canoeing.
+        </div>
+      </div>
+      {% comment %} <div class="col">
+        <div class="skills">
+          <h2>skills</h2>
+          <h5>python</h5>
+          <p>
+            I have built a couple of websites using the Django framework including this one and the reloading data tracker website
+          </p>
+        </div>
+      </div> {% endcomment %}
+    </div>
+
   </div>
 </div>
 

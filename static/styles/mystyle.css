@@ -3,7 +3,7 @@ body{
     padding-bottom: 120px;
 }
 
-/* navbar icons */
+/* navbar and icons */
 span > a > i {
     font-size: 1.7em;
     letter-spacing: .5em;
@@ -20,13 +20,15 @@ span > a:hover{
     color: rgb(107, 107, 107);
     text-decoration: none;
 }
-/* end nabar icons */
-
-
 
 nav.navbar{
     background-color: #2e4653;
 }
+/* end navbar and icons */
+
+
+
+
 
 /* nameplate and photo*/
 
@@ -71,27 +73,21 @@ nav.navbar{
     text-align: center;
 }
 
-.resume {
-    font-size: 50px;
-    letter-spacing: .03em;
-    font-weight: 700;
-    text-align: center;
+.resumeWrapper {
+    padding-top: 2em;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.resume > a{
-    color: rgb(94, 89, 80);
-    padding-top: .1em;
-}
-
-.resume > a:hover{
-    color: rgb(0, 3, 170);
-    text-decoration: none;
+.resume {
+    font-size: 40px;
+    letter-spacing: .03em;
+    font-weight: 700;
 }
 /* end nameplate and photo*/
 
+/* projects section */
 .MyProjects{
     background-color: #d1d1d1;
     padding-top: 2em;
@@ -99,7 +95,7 @@ nav.navbar{
     text-align: center;
 }
 
-.test{
+.projectSection{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -138,6 +134,7 @@ nav.navbar{
     padding: 3px 20px;
     border-radius: 20px;
 }
+/* end projects section */
 
 .aboutme{
     background-color: #ffffff;

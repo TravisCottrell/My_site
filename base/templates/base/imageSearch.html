@@ -1,0 +1,26 @@
+{% extends "base/base.html" %}
+{%block title%}Image Search Website{%endblock title%}
+{% load static %}
+
+{%block content%}
+<style>
+  img{
+    margin:20px;
+    width:1200px;
+    height:610px;
+  } 
+
+  body{
+    background-color: #20262b;
+  }
+</style>
+<div class="container">
+  <img src="{% static 'images/imageSearchPics/HomePage.png' %}">
+  <img src="{% static 'images/imageSearchPics/Post_UserList.png' %}">
+  <img src="{% static 'images/imageSearchPics/PostPage.png' %}">
+  <img src="{% static 'images/imageSearchPics/CityPage.png' %}">
+  <img src="{% static 'images/imageSearchPics/CountryPage.png' %}">
+  <img src="{% static 'images/imageSearchPics/ImageFilterPage.png' %}">
+  <img src="{% static 'images/imageSearchPics/AdvancedSearch.png' %}">
+</div>
+{%endblock content%}

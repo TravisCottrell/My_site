@@ -1,0 +1,24 @@
+{% extends "base/base.html" %}
+{%block title%}Image Search Website{%endblock title%}
+{% load static %}
+
+{%block content%}
+<style>
+  img{
+    margin:20px;
+    width:1200px;
+    height:610px;
+  } 
+
+  body{
+    background-color: #20262b;
+  }
+</style>
+<div class="container">
+  <img src="{% static 'images/dataTrackerPics/Home.png' %}">
+  <img src="{% static 'images/dataTrackerPics/Reloading.png' %}">
+  <img src="{% static 'images/dataTrackerPics/table.png' %}">
+  <img src="{% static 'images/dataTrackerPics/graph.png' %}">
+
+</div>
+{%endblock content%}

@@ -13,7 +13,7 @@
 <div class="nameplate">
   <div class="nameplate-content">
     <div class="nameplate-content-me">
-      <img id="profilePic" src="{% static 'images/self.jpg' %}">
+      <!-- <img id="profilePic" src="{% static 'images/self.jpg' %}"> -->
       <h1 class="name">Travis<br>Cottrell</h1>
     </div>
     <h3 class="title">FullStack Developer</h3>
@@ -62,6 +62,21 @@
         </div>
       </div>
 
+      <div class="projectsWrapper">
+        <div class="col">          
+          <img class="projectPics" src="{% static 'images/ai_car_pics/gen7.png' %}">
+          <div class="projectBody">
+              <a href="{% url 'AI_Car' %}"><h5>AI Cars</h5></a>
+              <p>Cars learning to drive around a semicircular track from generation to generation</p>
+              <div class="projectTagWrapper">
+              <span class="projectTag">Python</span>
+                <span class="projectTag">Genetic</span>
+                <span class="projectTag">Neural Network</span>
+              </div>
+          </div>
+        </div>
+      </div>
+
       {% comment %} <div class="projects--wrapper">
         <div class="col">
           <img class="project--thumbnail" src="{% static 'images/screenshot3.png' %}">
@@ -74,6 +89,21 @@
     </div>
   </div>
 </div>
+
+<div class="container-fluid OtherProjects ">
+  <h3>Other Projects</h3>
+  <div class="container">
+    <div class="row" >
+      <ul>
+        <a href="{% url 'HMM' %}"><li>Hidden Markov Model</li></a>
+        <a href="{% url 'Kmeans' %}"><li>K-means Algorithm</li></a>
+        <a href="{% url 'LinReg' %}"><li>Linear Regression</li></a>
+      </ul>
+      
+    </div>
+  </div>
+  
+  </div>
 
 <div class="container-fluid ">
   <div class="container ">

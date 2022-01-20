@@ -1,0 +1,41 @@
+{% extends "base/base.html" %}
+{%block title%}AI Cars{%endblock title%}
+{% load static %}
+
+{%block content%}
+<style>
+  img{
+    margin:20px;
+    justify-content: center;
+    /* width:800px;
+    height:610px; */
+  } 
+
+  body{
+    background-color: #20262b;
+  }
+
+  .center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  h3{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+</style>
+
+<div class="container ">
+  <h3>Generation 1</h3>
+  <img src="{% static 'images/ai_car_pics/gen1.png' %}" class="center">
+  <h3>Generation 5</h3>
+  <img src="{% static 'images/ai_car_pics/gen5.png' %}" class="center">
+  <h3>Generation 7</h3>
+  <img src="{% static 'images/ai_car_pics/gen7.png' %}" class="center">
+
+</div>
+{%endblock content%}

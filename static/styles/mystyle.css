@@ -66,6 +66,7 @@ nav.navbar{
     letter-spacing: .05em;
     font-weight: 700;
     line-height: 1em;
+    text-align: center;
 }
 
 .title{
@@ -89,7 +90,7 @@ nav.navbar{
 
 /* projects section */
 .MyProjects{
-    background-color: #d1d1d1;
+    background-color: #9b9b9b;
     padding-top: 2em;
     padding-bottom: 2em;
     text-align: center;
@@ -135,6 +136,22 @@ nav.navbar{
     border-radius: 20px;
 }
 /* end projects section */
+
+.OtherProjects{
+    background-color: #d1d1d1;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    
+}
+
+.OtherProjects h3{
+    text-align: center;
+    
+}
+
+.OtherProjects ul {
+    list-style-type: none;
+  }
 
 .aboutme{
     background-color: #ffffff;

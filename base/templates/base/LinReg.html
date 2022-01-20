@@ -1,0 +1,31 @@
+{% extends "base/base.html" %}
+{%block title%}Linear Regression{%endblock title%}
+{% load static %}
+
+{%block content%}
+<style>
+  img{
+    margin:20px;
+
+  } 
+
+  body{
+    background-color: #20262b;
+  }
+
+  .center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  p{
+    color: white;
+    text-align: center;
+  }
+</style>
+<div class="container">
+  <img src="{% static 'images/LinearRegression_pics/graph.png' %}" class="center">
+  <p >randomly generated points are plotted and then linear regression is used to plot the line</p>
+</div>
+{%endblock content%}

@@ -8,3 +8,15 @@ def imageSearch(request):
 
 def dataTracker(request):
     return render(request, 'base/dataTracker.html')
+
+def AI_Car(request):
+    return render(request, 'base/AI_Car.html')
+
+def HMM(request):
+    return render(request, 'base/HMM.html')
+
+def Kmeans(request):
+    return render(request, 'base/Kmeans.html')
+
+def LinReg(request):
+    return render(request, 'base/LinReg.html')

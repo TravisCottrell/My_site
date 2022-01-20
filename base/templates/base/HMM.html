@@ -1,0 +1,35 @@
+{% extends "base/base.html" %}
+{%block title%}Hidden Markov Model{%endblock title%}
+{% load static %}
+
+{%block content%}
+<style>
+  img{
+    margin:20px;
+
+  } 
+
+  body{
+    background-color: #20262b;
+  }
+
+  .center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  p{
+    color: white;
+    text-align: center;
+  }
+</style>
+<div class="container">
+  <img src="{% static 'images/HMM_pics/HMM.png' %}" class="center">
+  <p>
+    The user inputs a graph size, in this example it is 3. The user then inputs a emissions sequence.
+    An emissions matrix, transition matrix, and initial states are randomly generated.
+    All of the probabilites for each path are calculated and the most probable path is outputed with its probability 
+  </p>
+</div>
+{%endblock content%}

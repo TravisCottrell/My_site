@@ -100,14 +100,13 @@ nav.navbar{
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .projectsWrapper{
     gap: 2em;
     margin-top: 2em;
     margin-bottom: 2em;
-    overflow-x: auto;
+    
 }
 
 .projectPics{

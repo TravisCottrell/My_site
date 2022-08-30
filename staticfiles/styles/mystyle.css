@@ -1,0 +1,162 @@
+body{
+    background-color: #ffffff;
+    padding-bottom: 120px;
+}
+
+/* navbar and icons */
+span > a > i {
+    font-size: 1.7em;
+    letter-spacing: .5em;
+}
+
+span > a{
+    color: rgb(143, 143, 143);
+    padding-top: .1em;
+    padding-bottom: .1em;
+
+}
+
+span > a:hover{
+    color: rgb(107, 107, 107);
+    text-decoration: none;
+}
+
+nav.navbar{
+    background-color: #2e4653;
+}
+/* end navbar and icons */
+
+
+
+
+
+/* nameplate and photo*/
+
+.nameplate {
+    background-color: #20262b;
+    color: #fff;
+    min-height: 40vh;
+}
+
+.nameplate-content{
+    
+    width: 800px;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+.nameplate-content-me{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    gap: 2em;
+    margin-bottom: 3em;
+}
+
+#profilePic{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 70%;
+}
+
+.name{
+    font-size: 60px;
+    letter-spacing: .05em;
+    font-weight: 700;
+    line-height: 1em;
+    text-align: center;
+}
+
+.title{
+    font-size: 65px;
+    text-align: center;
+}
+
+.resumeWrapper {
+    padding-top: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resume {
+    font-size: 40px;
+    letter-spacing: .03em;
+    font-weight: 700;
+}
+/* end nameplate and photo*/
+
+/* projects section */
+.MyProjects{
+    background-color: #9b9b9b;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    text-align: center;
+}
+
+.projectSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectsWrapper{
+    gap: 2em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    
+}
+
+.projectPics{
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.projectBody{
+    width: 400px;
+    height: 250px;
+    background-color: #fff;
+    padding: 1em;
+}
+
+.projectTagWrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .3em;
+}
+
+.projectTag{
+    background-color: #c6e8f3;
+    width: fit-content;
+    padding: 3px 20px;
+    border-radius: 20px;
+}
+/* end projects section */
+
+.OtherProjects{
+    background-color: #d1d1d1;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    
+}
+
+.OtherProjects h3{
+    text-align: center;
+    
+}
+
+.OtherProjects ul {
+    list-style-type: none;
+  }
+
+.aboutme{
+    background-color: #ffffff;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    text-align: center;
+}
+
+
